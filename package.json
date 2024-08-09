@@ -6,7 +6,7 @@
   "description": "배포 테스트",
   "repository": {
     "type": "git",
-    "directory": "https://github.com/koranidro/koranidro-test.git"
+    "directory": "git+https://github.com/koranidro/koranidro-test.git"
   },
   "keywords": [
     "koranidro",
