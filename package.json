@@ -1,9 +1,13 @@
 {
   "name": "@koranidro/test",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "license": "MIT",
   "author": "koranidro <koranidro@gmail.com>",
   "description": "배포 테스트",
+  "repository": {
+	"type": "git",
+	"directory": "https://github.com/koranidro/koranidro-test.git"
+  },
   "keywords": [
     "koranidro",
     "고라니드로",
