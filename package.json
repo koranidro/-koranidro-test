@@ -20,18 +20,17 @@
 	},
 	"files": ["dist"],
 	"scripts": {
+		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
-		"flush": "git add . && git commit -m '.'",
+		"preversion": "git add . && git commit -m '.' && npm test",
 		"version": "npm version",
-		"publish": "npm publish --access=public",
-		"dev": "bun index.ts"
+		"publish": "git push main && git push --tags && git tag -d $(git tag) && npm publish --access=public"
 	},
 	"devDependencies": {
 		"@koranidro/test": "^0.1.0",
 		"@rollup/plugin-commonjs": "^26.0.1",
 		"@rollup/plugin-terser": "^0.4.4",
 		"@rollup/plugin-typescript": "^11.1.6",
-		"@types/bun": "latest",
 		"rollup": "^4.20.0",
 		"rollup-plugin-dts": "^6.1.1",
 		"tslib":"^2.6.3"
