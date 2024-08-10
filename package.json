@@ -3,6 +3,7 @@
 	"version": "0.1.18",
 	"license": "MIT",
 	"author": "koranidro <koranidro@gmail.com>",
+	"private": false,
 	"description": "배포 테스트",
 	"repository": {
 		"type": "git",
@@ -29,9 +30,8 @@
 	"scripts": {
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
-		"commit": "git add . && git commit -m '.'",
-		"version": "npm version",
-		"publish": "git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
+		"version": "git add . && git commit -m '.'",
+		"postversion": "git push origin main && git push origin --tags && git tag -d"
 	},
 	"devDependencies": {
 		"@koranidro/test": "^0.1.0",
