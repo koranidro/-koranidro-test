@@ -1,14 +1,19 @@
 {
 	"name": "@koranidro/test",
-	"version": "0.1.16",
+	"version": "0.1.17",
 	"license": "MIT",
 	"author": "koranidro <koranidro@gmail.com>",
 	"description": "배포 테스트",
 	"repository": {
-		"type":"git",
-		"url":"git+https://github.com/koranidro/koranidro-test.git"
+		"type": "git",
+		"url": "git+https://github.com/koranidro/koranidro-test.git"
 	},
-	"keywords": [ "koranidro", "고라니드로", "고라니", "test" ],
+	"keywords": [
+		"koranidro",
+		"고라니드로",
+		"고라니",
+		"test"
+	],
 	"type": "module",
 	"exports": {
 		".": {
@@ -18,7 +23,9 @@
 			"default": "./dist/index.mjs"
 		}
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
@@ -33,6 +40,6 @@
 		"@rollup/plugin-typescript": "^11.1.6",
 		"rollup": "^4.20.0",
 		"rollup-plugin-dts": "^6.1.1",
-		"tslib":"^2.6.3"
+		"tslib": "^2.6.3"
 	}
 }
