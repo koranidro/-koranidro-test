@@ -1,6 +1,12 @@
 # @koranidro/test
 
-## 1. 사용법:
+## 1. 설치
+
+```bash
+npm install @koranidro/test;
+```
+
+## 2. 사용법
 
 ```javascript
 import { add } from "@koranidro/test";
@@ -16,7 +22,7 @@ const { add } = require("@koranidro/test");
 console.log(`sum = ${add(5, 1)}`);
 ```
 
-## 2. 실행 결과:
+## 3. 실행 결과
 
 ```bash
 sum = 6
