@@ -31,9 +31,9 @@
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
 		"flush": "git add . && git commit -m '.'",
-		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) npm publish",
-		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) npm publish",
-		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) npm publish"
+		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish",
+		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish",
+		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish"
 	},
 	"devDependencies": {
 		"@koranidro/test": "^0.1.0",
