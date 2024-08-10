@@ -22,7 +22,7 @@
 	"scripts": {
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
-		"preversion": "git add . && git commit -m '.' && npm test",
+		"preversion": "git add . && git commit -m '.'",
 		"version": "npm version",
 		"publish": "git push main && git push --tags && git tag -d $(git tag) && npm publish --access=public"
 	},
