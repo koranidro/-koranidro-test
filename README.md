@@ -3,7 +3,7 @@
 ## 1. 설치
 
 ```bash
-npm install @koranidro/test;
+npm install @koranidro/test
 ```
 
 ## 2. 사용법
