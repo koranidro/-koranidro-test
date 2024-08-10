@@ -31,7 +31,7 @@
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
 		"version": "git add . && git commit -m '.'",
-		"postversion": "git push origin main && git push origin --tags && git tag -d"
+		"postversion": "git push origin main &&  git push origin --tags && git tag -d"
 	},
 	"devDependencies": {
 		"@koranidro/test": "^0.1.0",
