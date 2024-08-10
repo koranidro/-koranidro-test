@@ -31,7 +31,7 @@
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
 		"preversion": "git add . && git commit -m '.'",
-		"version": "echo ''",
+		"version": "npm version",
 		"prepublish": "git push origin main && git push origin --tags && git tag -d $(git tag)"
 	},
 	"devDependencies": {
