@@ -30,6 +30,7 @@
 		"dev": "bun index.ts",
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
 		"flush": "git add . && git commit -m '.'",
+		"pub:prepatch": "npm version prepatch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
 		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
 		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
 		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
