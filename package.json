@@ -1,6 +1,6 @@
 {
 	"name": "@koranidro/test",
-	"version": "0.1.23",
+	"version": "0.1.24-0",
 	"license": "MIT",
 	"author": "koranidro <koranidro@gmail.com>",
 	"description": "배포 테스트",
